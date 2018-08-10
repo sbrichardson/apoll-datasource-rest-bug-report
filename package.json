@@ -1,0 +1,36 @@
+{
+  "dependencies": {
+    "apollo-datasource-rest": "2.0.0-rc.5",
+    "apollo-server": "2.0.0-rc.5",
+    "graphql": "^0.13.2"
+  },
+  "name": "",
+  "version": "0.1.0",
+  "private": false,
+  "scripts": {
+    "start": "babel-node index.js"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-object-rest-spread"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "7.0.0-beta.54",
+    "@babel/node": "7.0.0-beta.54",
+    "@babel/plugin-proposal-object-rest-spread": "7.0.0-beta.54",
+    "@babel/preset-env": "7.0.0-beta.54",
+    "babel-eslint": "^8.2.6",
+    "babel-loader": "^8.0.0-beta.0"
+  }
+}
